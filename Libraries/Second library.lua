@@ -32,3 +32,5 @@ CircleMain.Parent = Button
 end
 
 end
+
+return SecondLib
