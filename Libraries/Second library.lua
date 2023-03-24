@@ -1,9 +1,8 @@
--- working for every game*
-
 local SecondLib = {}
 
-function SecondLib:AddScreenButton(size, position, color, test, test2, func)
+function SecondLib:AddScreenButton(size, position, color, test, test2, circletof, func)
 local ScreenGui = Instance.new("ScreenGui")
+local CircleMain = Instance.new("UICorner")
 local Button = 
 Instance.new("TextButton")
 
@@ -25,4 +24,11 @@ Button.Draggable = test
 Button.MouseButton1Down:connect(function()
 	func()
 end)
+
+if circletof == true then
+CircleMain.CornerRadius = UDim.new(0, 100)
+CircleMain.Name = "CircleMain"
+CircleMain.Parent = Button
+end
+
 end
