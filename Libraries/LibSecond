@@ -12,7 +12,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = test2
 
 Button.Name = "Button"
-Button.Parent = main
+Button.Parent = ScreenGui
 Button.BackgroundColor3 = color
 Button.Position = position
 Button.Size = size
